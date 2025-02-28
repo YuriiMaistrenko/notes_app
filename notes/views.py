@@ -4,7 +4,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 def index(request):
-    return render(request, 'notes\index.html')
+    return HttpResponse("Hello from Notes app.")
 
 def home(request):
     return render(request, 'notes\home.html')
