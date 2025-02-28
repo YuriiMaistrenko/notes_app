@@ -4,11 +4,11 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 def index(request):
-    return render(request, 'notes\index.html')
+    return render(request, 'index.html')
 
 def home(request):
-    return render(request, 'notes\home.html')
+    return render(request, 'home.html')
 
 def base(request):
     notes = ["Перша нотатка", "Друга нотатка", "Третя нотатка"]
-    return render(request, 'notes/base.html', {'notes': notes})
+    return render(request, 'base.html', {'notes': notes})
