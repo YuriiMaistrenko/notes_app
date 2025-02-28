@@ -9,6 +9,6 @@ def index(request):
 def home(request):
     return render(request, 'notes\home.html')
 
-def base(request):
+def index(request):
     notes = ["Перша нотатка", "Друга нотатка", "Третя нотатка"]
-    return render(request, 'notes/base.html', {'notes': notes})
+    return render(request, 'notes/index.html', {'index': notes})
