@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'notes/styles.css' %}">
+</head>
+<body>
+    <div class="container">
+        <div class="base_tittle"> <h1 class="text_tittle">Welcome to my base page</h1></div>
+        <div class="my_notess">
+            <div><h1>Мої нотатки</h1></div>
+            <div><ul>
+            {% for note in notes %}
+                <li>{{ note }}</li>
+            {% endfor %}
+            </ul></div>
+            <img src="../../static/images/cat.jpg" alt="cat">
+        </div>
+
+        <div class="base_button_home_box"> <button type="button" class="button" onclick="window.location.href='\\home'">Go to Homepage</button></div>
+    </div>
+</body>
+</html>
