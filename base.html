@@ -1,4 +1,4 @@
-{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,11 +13,11 @@
         <div class="my_notess">
             <div><h1>Мої нотатки</h1></div>
             <div><ul>
-            {% for note in notes %}
+            {for note in notes}
                 <li>{{ note }}</li>
-            {% endfor %}
+            { endfor }
             </ul></div>
-            <img src="../../static/images/cat.jpg" alt="cat">
+            <img src="./images/cat.jpg" alt="cat">
         </div>
 
         <div class="base_button_home_box"> <button type="button" class="button" onclick="window.location.href='home'">Go to Homepage</button></div>
